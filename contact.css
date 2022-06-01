@@ -36,6 +36,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19)
 }
 
 .left{
@@ -81,5 +83,30 @@ h2::after{
 
 .field:focus{
     background-color: #fff;
-    border:2px solid
+    border:2px solid rgba(30,85,250,0.47)
+}
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    outline: none; 
+    border: none;
+}
+
+.btn:hover{
+    background-color: black;
+} 
+
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+    .left{
+        height: 200px;
+    }
 }
