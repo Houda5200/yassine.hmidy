@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Tiro+Gurmukhi&display=swap');
 body{
     padding:0 2%;
     margin:0;
     font-family: 'Noto Sans JP', sans-serif;
-    text-decoration: none;
 }
 
 nav{
@@ -15,28 +13,21 @@ nav{
     background-color: white;
     position: sticky; 
     top: 0;
-    text-decoration: none;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    text-decoration: none;
-
 }
 
 nav ul li{
     margin-left: 20px;
     cursor: pointer;
     border-bottom: 1px solid #fff;
-    text-decoration: none;
-
-
 }
 
 nav ul li:hover{
     border-bottom-color:#000;
-    text-decoration: none;
 }
 
 .page-content{
@@ -48,6 +39,13 @@ nav ul li:hover{
 }
 .page-content header h1{
    margin: 0;
+   text-transform: uppercase;
+   font-family: 'Tiro Gurmukhi'sans-serif;
+   font-size: 6vw;
+}
+.page-content header p{
+    line-height: 30px;
+    
 }
 
 @media screen and (max-width:700px){
@@ -55,6 +53,7 @@ nav ul li:hover{
         justify-content: center;
     }
     nav ul{
-        display: none;
+        margin-top: 10%;
+        max-width:100%;
     }
 }
